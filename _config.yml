@@ -28,7 +28,7 @@ github_username:  jekyll
 # Build settings
 name: Salme Cook
 markdown: kramdown
-theme: alembic-jekyll-theme
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
   - jekyll-sitemap
