@@ -4,9 +4,5 @@ This is my first attempt at creating a personal website. So here we go!
 Personal Website
 
 
-This website was developed using the following tutorials:
-
-https://jekyllrb.com/docs/github-pages/
-
-http://jmcglone.com/guides/github-pages/
+This website was developed using https://www.w3schools.com/
 
