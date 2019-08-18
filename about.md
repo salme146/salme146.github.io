@@ -1,7 +1,214 @@
----
-layout: default
-title: About
----
-# About page 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">	
+<style>
+		
+html {
+font-family: "Palatino Linotype";
+}
+	
+* {
+  box-sizing: border-box;
+}
+/* Style the body */
+	
+body {
+	/*background-color:rgb(0, 123, 161);
+	padding: 10px;
+	margin: 0;*/	
+	background-color:white;
+	border: 2px black;	
+	padding: 10px;	
+}
+/* Style the header */
+.header {
+	background-image:url(Hampton_Bridge_2.jpg);
+	background-repeat: repeat;
+	background-position: center center;
+	background-color: #D5D8DC;
+	border: 3px solid;
+	opacity: 1;
+	/*width: 100vw;*/
+	height: auto;
+	background-size: cover;
+	float: center;
+	padding: 5px;	
+	text-align: center;
+	color: black;		
+}
+	
+/* Style the header 
+.header {
+	background-color:rgb(0, 123, 161);
+	float: center;		
+	padding: 20px;
+	text-align: center;
+	color: black;		
+}
+*/
+	
+.header h1 {
+  font-size: 50px;
+  color: black;		
+}
+	
+.header h2 {
+  font-size: 30px;
+  color: black;		
+}
+	
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:black;
+}
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color:rgb(240, 240, 240);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 20%;
+}
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 80%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+	
+	
+img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+.imleft{
+        float: left;
+}
+.imright{
+        float: right;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}	
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+	
+</style>
+</head>
+	
+<body>
+	
+<div class="header">
+<h1>Salme Cook</h1>
+<h2> PhD Candidate, University of New Hampshire <br>
+	Thanks for visiting! More content coming soon...</h2>  
+</div>
+	
+<div class="topnav">
+<li>
+  <a href="./" target="_self">Home</a>
+  <a href=".." target="_self">About Me</a>
+  <a href="../Research" target="self">Current Projects
+  <a href="/projects/past">Past Projects</a>
+  <a href="/outreach">Outreach</a>	
+  <a href="#">Contact me</a>
+  <a href="#">Other</a>	
+</li>
+</div>	
+	
 
-This page tells you a little bit about me.
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img style="height:300px;" src="salme_cook_headshot_zoom.jpg" alt="Salme Cook"/>
+      <p><b>B.Eng. Environmental Engineering</b> <br> <i>Stevens Institute of Technology Hoboken, NJ</i></p>
+      <p><b>M.Eng. Ocean Engineering</b> <br>  <i>Stevens Institute of Technology Hoboken, NJ</i></p>
+      <p><b>Ph.D. Student Oceanography (current)</b> <br>  <i>University of New Hampshire</i></p>    
+    </div>
+	  
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+	
+  <div class="rightcolumn">
+    <div class="card">	 
+      <h2> Research </h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p> Current Projects </p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>    
+    </div>
+
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+	    
+    </div>
+  </div>
+</div>	
+	
+	
+<footer>
+	<ul>
+	<a href="mailto:salme.cook@gmail.com">email</a>
+	<a href="https://github.com/salme146">github.com/salme146</a>
+	</ul>
+</footer>
+</body>
+</html>
