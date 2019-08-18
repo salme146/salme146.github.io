@@ -9,54 +9,46 @@
 		
 html {
 font-family: "Palatino Linotype";
-}		
-		
+}
+	
+* {
+  box-sizing: border-box;
+}
+
 /* Style the body */
 	
 body {
-background-color:rgb(0, 123, 161);
-background-image:"Hampton_Bridge.jpg";
-background-repeat: no-repeat;
-background-position: center;
-border: 2px black;
-padding: 8px;
-margin: 0;
+	/*background-color:rgb(0, 123, 161);
+	background-image:"Hampton_Bridge.jpg";
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px black;
+	padding: 10px;
+	margin: 0;*/	
+	background-color:white;
+	padding: 10px;	
 }
-	
-	
-img{
-    max-width: 100%;
-    max-height: 100%;
-  }
-.imleft{
-        float: left;
-}
-.imright{
-        float: right;
-}	
+
 	
 /* Style the header */
-	
 .header {
-background-color:rgb(240, 240, 240);
-/*background-image:url(Hampton_Bridge.jpg);*/
-background-position: center center;
-opacity: 1;
-/*width: 100vw;*/
-height: auto;
-background-size: cover;
-float: center;
-/*padding: 5px;*/		
-padding: 20px;
-text-align: center;
-color: white;		
+	background-color:rgb(0, 123, 161);
+	float: center;		
+	padding: 20px;
+	text-align: center;
+	color: black;		
 }
 
 .header h1 {
   font-size: 50px;
-  color: white;		
+  color: black;		
 }
-
+	
+.header h2 {
+  font-size: 30px;
+  color: black;		
+}
+	
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
@@ -79,12 +71,41 @@ color: white;
   color: black;
 }
 
-.projects {
-  background-color: white;
-  color: blue;
-  margin: 20px;
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
   padding: 20px;
-} 
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* Footer */
 .footer {
@@ -95,51 +116,87 @@ color: white;
 }	
 
 
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
 	
 </style>
 </head>
+	
 <body>
 	
-      <div class="header">
-      <h1>Salme Cook</h1>
-	<p> PhD Candidate, University of New Hampshire
-	    I am currently finishing my PhD in oceanography at the University of New Hampshire in Durham, NH.
-	    Thanks for visiting! More content coming soon...
-		<a href="/about">Read more about my life...</a></p>	   
-      </div>
+<div class="header">
+<h1>Salme Cook</h1>
+<h2> PhD Candidate, University of New Hampshire <br>
+	Thanks for visiting! More content coming soon...</h2>  
+</div>
 	
-	<div class="topnav">
-	  <a href="#">Link</a>
-	  <a href="#">Link</a>
-	  <a href="/about">About Salme...</a>
-	  <a href="#" style="float:right">Link</a>
-	</div>	
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="/about">About Me</a>
+  <a href="/projects/current">Current Projects</a>
+  <a href="/projects/past">Past Projects</a>
+  <a href="/outreach">Outreach</a>	
+  <a href="#">Contact me</a>
+  <a href="#">Other</a>	
+</div>	
 	
 
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>	        
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
 	
-		<footer>
+  <div class="rightcolumn">
+    <div class="card">	 
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>    
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>	
 	
-			<h2> PhD work </h2>
-			<h2> Outreach </h2>
-			
-			<p><img src="Hampton_Bridge.jpg" alt="Hampton Estuary, NH" style="float:left;width:100px;height:100px;">
-				work in Hampton Estuary, NH .</p>
-			
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-			
-		
-    		<ul>
-        		<a href="mailto:salme.cook@gmail.com">email</a>
-        		<a href="https://github.com/salme146">github.com/salme146</a>
-		</ul>
-			
 	
-		</footer>
-	</body>
+<footer>
+	<ul>
+	<a href="mailto:salme.cook@gmail.com">email</a>
+	<a href="https://github.com/salme146">github.com/salme146</a>
+	</ul>
+</footer>
+</body>
 </html>
