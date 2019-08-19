@@ -18,9 +18,6 @@ font-family: ""Times New Roman", Times, serif";
 /* Style the body */
 	
 body {
-	/*background-color:rgb(0, 123, 161);
-	padding: 10px;
-	margin: 0;*/	
 	background-color:white;
 	border: 2px black;	
 	padding: 10px;	
@@ -43,16 +40,6 @@ body {
 	color: black;		
 }
 	
-/* Style the header 
-.header {
-	background-color:rgb(0, 123, 161);
-	float: center;		
-	padding: 20px;
-	text-align: center;
-	color: black;		
-}
-*/
-	
 .header h1 {
   font-size: 50px;
   color: black;		
@@ -62,10 +49,18 @@ body {
   font-size: 30px;
   color: black;		
 }
+	
 }	
 .header h5 {
   font-size: 20px;
   color: black;		
+}
+	
+.bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
 }
 /* Style the top navigation bar */
 .topnav {
@@ -104,7 +99,6 @@ body {
   padding-left: 20px;
 }
 
-	
 a:visited {
     color: red;
     background-color: transparent;
@@ -122,14 +116,12 @@ a:active {
     text-decoration: underline;
 }
 	
-	
 /* Fake image */
 .fakeimg {
   background-color: #aaa;
   width: 100%;
   padding: 20px;
 }
-	
 	
 img{
     max-width: 100%;
@@ -153,14 +145,12 @@ video {
   padding: 20px;
   margin-top: 20px;
 }
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* Footer */
 .footer {
   padding: 20px;
@@ -168,8 +158,6 @@ video {
   background: #ddd;
   margin-top: 20px;
 }	
-
-
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
@@ -177,7 +165,6 @@ video {
     padding: 0;
   }
 }
-
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
   .topnav a {
@@ -192,23 +179,21 @@ video {
 <body>
 	
 <div class="header">
-	<h1>Salme Cook</h1>
-	<h2> PhD Candidate, University of New Hampshire <br>
-	Thanks for visiting! More content coming soon...</h2>  
+	<div class="bottomleft">If there's a heaven for me, <br>
+	I'm sure there's a beach attached to it -Jimmy Buffet </div>
 </div>
 	
 <div class="topnav">
-  <li>
+<li>
   <a href="#">Home</a>
   <a href="/about">About Me</a>
   <a href="../Research">Research</a>
   <a href="/Outreach">Outreach</a>	
   <a href="/Press">Press</a>
   <a href="#">Other</a>	
-  </li>
+</li>
 </div>	
 	
-
 <div class="row">
   <div class="leftcolumn">
 	  
@@ -237,6 +222,7 @@ video {
 </div>
 	
   <div class="rightcolumn">
+	  
     <div class="card">	 
       <h2>Research Interests</h2>
       <h3>Coastal Hydrodynamics</h3>
