@@ -8,7 +8,7 @@
 <style>
 		
 html {
-font-family: ""Times New Roman", Times, serif";
+font-family: Arial, Helvetica, sans-serif;
 }
 	
 * {
@@ -71,7 +71,7 @@ body {
 }
 	
 /* Style the top navigation bar */
-.topnav {
+.topnav-centered {
   overflow: hidden;
   background-color:black;
 }
@@ -175,17 +175,46 @@ video {
     padding: 0;
   }
 }
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other
 @media screen and (max-width: 400px) {
   .topnav a {
     float: none;
     width: 100%;
   }
 }
+*/
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #04AA6D;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
 	
 </style>
 </head>
-	
 <body>
 	
 <div class="header">
