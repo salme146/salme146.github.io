@@ -25,6 +25,7 @@ google_scholar: Salme Cook
 name: Salme Cook
 markdown: kramdown
 theme: jekyll-theme-minimalist
+remote_theme: BDHU/minimalist@v0.1.0
 plugins:
   - jekyll-feed
   - jekyll-sitemap
