@@ -26,9 +26,9 @@ name: Salme Cook
 markdown: kramdown
 remote_theme: BDHU/minimalist@v0.1.0
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+#  - jekyll-feed
+#  - jekyll-sitemap
+#  - jekyll-seo-tag
   - jekyll-remote-theme
 
 # Exclude from processing.
