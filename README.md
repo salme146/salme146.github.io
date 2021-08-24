@@ -1,8 +1,8 @@
-This is my first attempt at creating a personal website. So here we go!
-
 # www.salmecook.com
 Personal Website
 
+this was developed with the Jekyll minimalist theme: 
+https://jekyll-themes.com/minimalist/
 
-This website was developed using https://www.w3schools.com/
+
 

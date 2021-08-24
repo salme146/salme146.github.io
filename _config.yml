@@ -15,7 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 
 email: salme.cook@gmail.com
-description:  Motivating myself in coastal dynamics 
+title: Coastal research and personal musings
+description:   Research and musings  
 github_username:  salme146
 linkedin_username: salmecook
 google_scholar: Salme Cook
@@ -23,11 +24,12 @@ google_scholar: Salme Cook
 # Build settings
 name: Salme Cook
 markdown: kramdown
-theme: jekyll-theme-cayman
+remote_theme: BDHU/minimalist@v0.1.0
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
