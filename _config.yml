@@ -24,7 +24,7 @@ google_scholar: Salme Cook
 # Build settings
 name: Salme Cook
 markdown: kramdown
-remote_theme: BDHU/minimalist@v0.1.0
+theme: jekyll-theme-minimalist
 plugins:
   - jekyll-feed
   - jekyll-sitemap
